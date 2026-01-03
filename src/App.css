@@ -1,14 +1,20 @@
-/* * {
-  box-sizing: border-box;
-} */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* sørger for at body fyller hele skjermen */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
-  background-color: #f3f4f6;
+  background-color: #f8fafc;
   color: #1f2937;
 }
+
+
 
 
 /* .page {

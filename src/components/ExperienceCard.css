@@ -1,0 +1,123 @@
+/* Containeren som gir bakgrunn og kontroll over layout */
+.experience-section {
+  background-color: #f8fafc; /* Din lysegrå bakgrunn */
+  /* padding: top right bottom left. Vi setter 0 på topp/bunn og 2rem på sidene */
+  padding: 0 2rem 80px 2rem; 
+  min-height: 100vh; /* Sørger for at bakgrunnen dekker hele skjermen */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Sentrerer alt innhold horisontalt */
+}
+
+/* En indre wrapper som begrenser bredden på teksten og gridet */
+.experience-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 60px; /* Gir litt avstand fra nav-baren uten å lage "glippe" */
+}
+
+/* Tittel-styling */
+.experience-section h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: left; /* Juster til 'center' hvis du vil ha overskriften i midten også */
+}
+
+/* Filter-knapper sentrert */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.filters button {
+  padding: 10px 24px;
+  border: none;
+  background: #ffffff;
+  color: #64748b;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.filters .active {
+  background: #14b8a6;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.3);
+}
+
+/* Grid-systemet */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Kortene */
+.experience-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #14b8a6;
+}
+
+.experience-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.experience-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.experience-card .year {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.experience-card .type {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #14b8a6;
+  background: #f0fdfa;
+  padding: 4px 12px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 0 1.5rem 40px 1.5rem;
+  }
+}

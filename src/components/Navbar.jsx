@@ -3,19 +3,19 @@ import "./Navbar.css";
 
 export function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-inner">
-        <NavLink to="/About" className="nav-link">
-          Om
+    <nav className="navbar-wrapper">
+      <div className="navbar-pill">
+        <NavLink to="/About" className="nav-item">
+          About
         </NavLink>
-        <NavLink to="/Experience" className="nav-link">
-          Erfaring
+        <NavLink to="/Experience" className="nav-item">
+          Experience
         </NavLink>
-        <NavLink to="/SportsCareer" className="nav-link">
-          Idrettskarriere
+        <NavLink to="/SportsCareer" className="nav-item">
+          Sports
         </NavLink>
-        <NavLink to="/Contact" className="nav-link">
-          Kontakt
+        <NavLink to="/Contact" className="nav-item">
+          Contact
         </NavLink>
       </div>
     </nav>
