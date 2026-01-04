@@ -1,97 +1,115 @@
+/* 1. Global bakgrunn (det du ser på sidene) */
 html, body {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f1f5f9; /* Lysegrå ramme på sidene */
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* sørger for at body fyller hele skjermen */
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: #1f2937;
+  line-height: 1.5;
 }
 
-
-
-
-/* .page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem;
+/* 2. Hovedbeholderen som sentrerer innholdet ditt */
+.app-container {
+  max-width: 1200px;      /* Bredden på det hvite feltet */
+  margin: 0 auto;         /* Sentrerer boksen */
+  background-color: #ffffff; /* Selve innholdssiden er hvit */
+  min-height: 100vh;      /* Går helt til bunnen av skjermen */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03); /* Myk skygge mot det grå */
+  
+  /* Luft på innsiden av det hvite feltet */
+  padding: 0 4rem; 
+  box-sizing: border-box;
+  
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-} */
+}
 
-
+/* 3. Global typografi basert på bildene dine */
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 850;
   margin: 0;
+  letter-spacing: -0.02em;
+  color: #111827;
 }
 
-h2 {
-  font-size: 2rem;
-  margin: 0.5rem 0;
+/* 4. Responsivitet for mobil */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 1.5rem;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
-h3 {
-  margin: 0.25rem 0;
+/* Containeren for filtrene */
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center; /* Sørger for at knapper og select flukter */
+  margin: 2rem 0;
 }
 
-
-/* img {
-  width: 100%;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-} */
-
-
-
-/* button {
+.filters select {
+  /* Fjerner standard pil fra Chrome/Safari/Firefox */
   appearance: none;
-  border: none;
-  border-radius: 10px;
-  padding: 0.7rem 1.6rem;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: inherit;
-  background-color: #1f2933;
-  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Styling som matcher knappene dine */
+  padding: 0.6rem 2.5rem 0.6rem 1.2rem; /* Mer plass til høyre for den nye pilen */
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+  background-color: #ffffff;
+  
+  /* Mykere hjørner og tynnere kant */
+  border: 1px solid #e5e7eb;
+  border-radius: 12px; 
   cursor: pointer;
-  transition: transform 0.1s ease, background-color 0.2s ease;
+  
+  /* Legger til en moderne pil som et bakgrunnsbilde (SVG) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1.1rem;
+  
+  /* Myk skygge */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
 }
 
-button:hover {
-  background-color: #324252;
-  transform: scale(1.03);
+/* Hover-effekt */
+.filters select:hover {
+  border-color: #10b981; /* Din grønne accent */
+  background-color: #f9fafb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-button:active {
-  transform: translateY(1px);
+/* Når man trykker på den */
+.filters select:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
 
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-} */
-
-
-
-
-
-
-/* @media (max-width: 900px) {
-  .product-card {
-    max-width: calc(50% - 1rem); 
+/* Responsiv tilpasning for mobil */
+@media (max-width: 640px) {
+  .filters {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .filters select, .filters button {
+    width: 100%; /* Full bredde på små skjermer */
   }
 }
-
-@media (max-width: 600px) {
-  .product-card {
-    max-width: 100%; 
-  }
-} */

@@ -1,6 +1,6 @@
 /* Containeren som gir bakgrunn og kontroll over layout */
 .experience-section {
-  background-color: #f8fafc; /* Din lysegrå bakgrunn */
+  background-color: #ffffff; /* Din lysegrå bakgrunn */
   /* padding: top right bottom left. Vi setter 0 på topp/bunn og 2rem på sidene */
   padding: 0 2rem 80px 2rem; 
   min-height: 100vh; /* Sørger for at bakgrunnen dekker hele skjermen */
@@ -83,11 +83,11 @@
   width: 56px;
   height: 56px;
   object-fit: contain;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .experience-card h2 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.1rem 0;
   font-size: 1.4rem;
   color: #1e293b;
 }
@@ -95,7 +95,7 @@
 .experience-card .year {
   font-size: 0.9rem;
   color: #94a3b8;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 .experience-card p {

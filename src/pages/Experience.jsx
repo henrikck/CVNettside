@@ -27,7 +27,7 @@ export function Experience() {
       },
       {
         title: "Lagerarbeider",
-        desc: "Samarbeidet med automatiserte systemer for presis varelagerhåndtering og effektiv logistikk. Arbeidet treskift (dag/kveld/natt) i frysemiljø på –24 °C.",
+        desc: "Varehåndtering og logistikk med automatiserte systemer. Erfaring med treskiftarbeid i frysemiljø (–24 °C)",
         img: "/src/assets/experience/asko.png",
         year: "2025",
         type: "Work"
@@ -41,7 +41,7 @@ export function Experience() {
       },
       {
         title: "Hovedtrener for brytelek/skole",
-        desc: "Ansvar for brytepartier (4–9 år) med vekt på mestring og trygghet.",
+        desc: "Ansvar for brytepartier (4–9 år) med fokus på mestring og trygghet.",
         img: "/src/assets/experience/bryte.png",
         year: "2022",
         type: "Work"
@@ -54,7 +54,7 @@ export function Experience() {
         type: "Volunteer"
       },
       {
-        title: "Referansegruppemedlem, Matematikk 3",
+        title: "Referansegruppemedlem i Matematikk 3",
         desc: "Bidro med tilbakemeldinger til emneansvarlige for faglig utvikling.",
         img: "/src/assets/experience/ntnu.png",
         year: "2025",
@@ -68,27 +68,33 @@ export function Experience() {
         type: "Volunteer"
       }
     ];
-    
+
     const [filter, setFilter] = useState("All");
+    const [sortOrder, setSortOrder] = useState("newest");
 
-    const filteredExperiences = experiences.filter(exp =>
-        filter === "All" ? true : exp.type === filter
-    );
-
+    const filteredExperiences = experiences
+      .filter(exp => filter === "All" || exp.type === filter)
+      .sort((a, b) => {
+        return sortOrder === "newest"
+          ? Number(b.year) - Number(a.year)
+          : Number(a.year) - Number(b.year);
+      });
 
   return (
     <div className="experience-section">
       <h1>Erfaring</h1>
 
       <div className="filters">
-        {["All", "Work", "Volunteer"].map(type => (
-          <button
-            key={type}
-            className={filter === type ? "active" : ""}
-            onClick={() => setFilter(type)}>
-            {type}
-          </button>
-        ))}
+        <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <option value="All">Alle</option>
+          <option value="Work">Work</option>
+          <option value="Volunteer">Verv</option>
+        </select>
+
+        <select value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}>
+          <option value="newest">Nyest → Eldst</option>
+          <option value="oldest">Eldst → Nyest</option>
+        </select>
       </div>
 
       <div className="experience-grid">
