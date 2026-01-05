@@ -33,7 +33,7 @@ export function SportsCareer() {
     { title: "4. plass i innendørs Student-NM", desc: "4 * 500 meter stafett. Kun noen tiendeler fra 3. plassen.", img: snm2025Innen, year: "2025", type: "Roing", big: "no" },
     { title: "5. plass i U23-EM i sumo", desc: "I 85-kilosklassen. Gikk på et knepent tap i bronsefinalen.", img: sumoEm, year: "2024", type: "Sumobryting", big: "yes" },
     { title: "Norgesmester i sumobryting", desc: "1. plass i 85-kilosklassen i U20-klassen.", img: sumoNm, year: "2024", type: "Sumobryting", big: "yes" },
-    { title: "5. plass i U20 Nordisk", desc: "I 87-kilosklassen som U20.", img: bryteImg1, year: "2023", type: "Bryting", big: "no" },
+    { title: "5. plass i U20 Nordisk", desc: "I 82-kilosklassen som U20.", img: bryteImg1, year: "2023", type: "Bryting", big: "no" },
     { title: "3. plass i Rosny Cup", desc: "Deltok på vegne av landslaget i et internasjonalt stevne i Frankrike.", img: rosneyImg, year: "2023", type: "Bryting", big: "no" },
     { title: "Norgesmester i bryting", desc: "1. plass i 87-kilosklassen som U20.", img: nm2023Junior, year: "2023", type: "Bryting", big: "yes" },
     { title: "4. plass i Senior-NM", desc: "Knepent tap i semifinalen.", img: nm2023Senior, year: "2023", type: "Bryting", big: "no" },
@@ -69,7 +69,7 @@ export function SportsCareer() {
         <h1>Idrettskarriere</h1>
         
         <p className="section-subtitle">
-          En omfattende oversikt over mine idrettslige prestasjoner innen bryting, roing, 
+          En oversikt over mine idrettslige prestasjoner innen bryting, roing, 
           sumobryting og sandbryting, med fokus på resultater fra nasjonale og internasjonale mesterskap.
         </p>
 
