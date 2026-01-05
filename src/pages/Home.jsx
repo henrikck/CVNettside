@@ -18,7 +18,7 @@ export function Home() {
           </h1>
 
           <p className="hero-description">
-            Jeg heter Henrik Christoffer Kran og er masterstudent i datateknologi ved NTNU, 
+            Jeg heter Henrik Christoffer Kran, er masterstudent i datateknologi ved NTNU, 
             med bakgrunn som patruljefører i GSV og landslagsutøver i bryting.
           </p>
 
