@@ -1,21 +1,74 @@
-/* GRID FOR SPORT - Gjør boksene smalere ved å senke min-width */
+/* Container for hele sport-seksjonen */
+.sports-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+.sports-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tittel-styling - Sentrert */
+.sports-section h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Undertittel - sentrert */
+.section-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* GRID FOR SPORT */
 .sports-grid {
   display: grid;
-  /* Vi senker minmax fra 320px til 280px for å få smalere kort og flere i bredden */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-items: center; /* Sentrerer kortene i selve rutenettet */
 }
 
-/* SPORT-KORT - "Finer" design og lik hover som Experience */
+/* ANIMASJON: Fade inn effekt */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* SPORT-KORT */
 .sports-card {
   background: #ffffff;
   border-radius: 24px;
-  padding: 1rem 1.5rem; 
+  padding: 1.5rem; 
   text-align: center;
-  border: 1px solid rgba(226, 232, 240, 0.8); /* Samme border som Experience */
+  border: 1px solid rgba(226, 232, 240, 0.8);
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
@@ -24,30 +77,29 @@
   box-sizing: border-box;
 }
 
-/* HOVER-EFFEKT - Nå med teal farge og samme bevegelse */
 .sports-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border-color: #14b8a6; /* Samme farge som Experience */
+  border-color: #14b8a6;
 }
 
-/* STØRRE SIRKULÆRT BILDE */
+/* SIRKULÆRT BILDE */
 .sports-card img {
-  width: 190px; /* Økt fra 160px */
-  height: 190px; /* Økt fra 160px */
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.5rem;
-  border: 5px solid #f0fdfa; /* Tykkere ramme rundt bildet */
+  border: 5px solid #f0fdfa;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.4s ease;
 }
 
-/* TEKST I SPORT-KORT */
+/* TEKST I KORT */
 .sports-card h2 {
   font-size: 1.5rem;
   color: #1e293b;
-  margin: 0 0 0.4rem 0;
+  margin-bottom: 0.4rem;
   font-weight: 800;
 }
 

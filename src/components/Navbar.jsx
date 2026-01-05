@@ -13,10 +13,10 @@ export function Navbar() {
       </div>
 
       <div className="navbar-pill">
-        <NavLink to="/About" className="nav-item">About</NavLink>
-        <NavLink to="/Experience" className="nav-item">Experience</NavLink>
-        <NavLink to="/SportsCareer" className="nav-item">Sports</NavLink>
-        <NavLink to="/Contact" className="nav-item">Contact</NavLink>
+        <NavLink to="/About" className="nav-item">Om</NavLink>
+        <NavLink to="/Experience" className="nav-item">Erfaring</NavLink>
+        <NavLink to="/SportsCareer" className="nav-item">Idretts karriere</NavLink>
+        <NavLink to="/Contact" className="nav-item">Kontakt</NavLink>
       </div>
     </nav>
   );

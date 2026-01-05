@@ -1,12 +1,11 @@
 import "./ExperienceCard.css";
 
-
 export function ExperienceCard({ experience }) {
   
   return (
     <div className="experience-card">
 
-      <img src={experience.img} alt={experience.title} />
+      <img src={experience.img} alt={experience.title} loading="lazy" />
       
       <h2>{experience.title}</h2>
 
