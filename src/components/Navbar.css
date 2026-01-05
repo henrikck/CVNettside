@@ -1,4 +1,4 @@
-/* Wrapper som sentrerer navbaren */
+
 .navbar-wrapper {
   position: sticky;
   top: 1.5rem;
@@ -10,7 +10,7 @@
   padding: 0 2rem;
 }
 
-/* Logo-beholder plassert til venstre */
+
 .logo-container {
   position: absolute;
   left: 2rem;
@@ -18,25 +18,25 @@
   align-items: center;
 }
 
-/* Logo-bildet med skygge */
+
 .nav-logo-img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  /* Her er skyggen: */
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Gjør kanten litt skarpere */
+  border: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .nav-logo-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Kraftigere skygge ved hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Selve pillen */
+
 .navbar-pill {
   display: flex;
   gap: 2rem;
@@ -46,7 +46,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Linkene */
+
 .nav-item {
   position: relative;
   text-decoration: none;
@@ -60,14 +60,14 @@
   color: #14b8a6;
 }
 
-/* MOBIL-TILPASNING: Skjuler logoen helt */
+
 @media (max-width: 768px) {
   .logo-container {
-    display: none; /* Dette fjerner bildet på mobil */
+    display: none; 
   }
   
   .navbar-pill {
-    gap: 1rem; /* Gjør menyen litt tettere på mobil */
+    gap: 1rem; 
     padding: 0.75rem 1.5rem;
   }
 }

@@ -1,16 +1,16 @@
-import { NavLink, useLocation } from "react-router-dom"; // Importer useLocation
+import { NavLink, useLocation } from "react-router-dom"; 
 import homeLogo from "../assets/Home.jpg";
 import "./Navbar.css";
 
 export function Navbar() {
   const location = useLocation(); // Hent nåværende sti
 
-  // Sjekk om vi er på hjemmesiden
+  
   const isHomePage = location.pathname === "/";
 
   return (
     <nav className="navbar-wrapper">
-      {/* Profilbildet vises bare hvis vi IKKE er på hjemmesiden */}
+      {}
       <div className="logo-container">
         {!isHomePage && (
           <NavLink to="/">

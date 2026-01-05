@@ -1,10 +1,10 @@
 import "./About.css";
-import snm2025 from "../assets/sports/SNM2025.jpg"; // Du kan bytte ut denne med et annet bilde om ønskelig
+import snm2025 from "../assets/sports/SNM2025.jpg"; 
 
 export function About() {
   return (
     <div className="about-container">
-      {/* Toppseksjon med bilde og introduksjon */}
+      {}
       <section className="about-hero-section">
         <div className="about-image-wrapper">
           <img src={snm2025} alt="Henrik Christoffer Kran" className="about-img" />
@@ -22,9 +22,9 @@ export function About() {
         </div>
       </section>
 
-      {/* Grid med utdypende informasjon */}
+      {}
       <div className="about-content-grid">
-        {/* Kort 1: Militær og Idrett */}
+        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-medal"></i></div>
           <h3>Erfaring & Disiplin</h3>
@@ -35,7 +35,7 @@ export function About() {
           </p>
         </div>
 
-        {/* Kort 2: Teknisk kompetanse */}
+        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-code"></i></div>
           <h3>Programmering & Utvikling</h3>
@@ -46,7 +46,7 @@ export function About() {
           </p>
         </div>
 
-        {/* Kort 3: Læringsassistent */}
+        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-chalkboard-user"></i></div>
           <h3>Formidling & Veiledning</h3>

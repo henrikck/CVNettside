@@ -1,7 +1,7 @@
 import CVImg from "../assets/Home.jpg";
 import "./Home.css";
 
-// Oppdaterte importer basert på din filstruktur i VS Code
+
 import ntnuImg from "../assets/ntnuS.png"; 
 import askoImg from "../assets/askoS.png"; 
 import gsvImg from "../assets/gsvS.png"; 

@@ -28,15 +28,15 @@ footer {
   cursor: pointer;
 }
 
-/* Bildene inni wrapperen */
+
 .footer-icons .icon img {
-  width: 70%; /* skaler bildet litt inn fra kanten */
+  width: 70%; 
   height: 70%;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover-effekt */
+
 .footer-icons .icon:hover {
   transform: scale(1.1);
   opacity: 0.8;
@@ -47,11 +47,11 @@ footer {
 }
 
 #mail:hover {
-  background-color: #D44638; /* blå bakgrunn */
+  background-color: #D44638; 
 }
 
 #linkedin:hover {
-  background-color: #0A66C2; /* blå bakgrunn */
+  background-color: #0A66C2; 
 }
 
 

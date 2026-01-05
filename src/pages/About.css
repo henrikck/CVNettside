@@ -5,7 +5,7 @@
   line-height: 1.6;
 }
 
-/* Hero seksjon med bilde og tekst */
+
 .about-hero-section {
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@
   max-width: 600px;
 }
 
-/* Grid for kompetanse-kort */
+
 .about-content-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -88,7 +88,7 @@
   color: #666;
 }
 
-/* Responsivt design */
+
 @media (max-width: 950px) {
   .about-hero-section {
     flex-direction: column;
@@ -99,7 +99,7 @@
   .about-img {
     width: 250px;
     height: 250px;
-    border-radius: 50%; /* Blir sirkulær på små skjermer for bedre flyt */
+    border-radius: 50%; 
   }
 
   .about-title {

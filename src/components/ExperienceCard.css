@@ -1,31 +1,29 @@
-/* Containeren som gir bakgrunn og kontroll over layout */
 .experience-section {
-  background-color: #ffffff; /* Din lysegrå bakgrunn */
-  /* padding: top right bottom left. Vi setter 0 på topp/bunn og 2rem på sidene */
+  background-color: #ffffff; 
   padding: 0 2rem 80px 2rem; 
-  min-height: 100vh; /* Sørger for at bakgrunnen dekker hele skjermen */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Sentrerer alt innhold horisontalt */
+  align-items: center; 
 }
 
-/* En indre wrapper som begrenser bredden på teksten og gridet */
+
 .experience-container {
   max-width: 1200px;
   width: 100%;
-  margin-top: 60px; /* Gir litt avstand fra nav-baren uten å lage "glippe" */
+  margin-top: 60px; 
 }
 
-/* Tittel-styling */
+
 .experience-section h1 {
   font-size: 2.5rem;
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 2rem;
-  text-align: left; /* Juster til 'center' hvis du vil ha overskriften i midten også */
+  text-align: left; 
 }
 
-/* Filter-knapper sentrert */
+
 .filters {
   display: flex;
   justify-content: center;
@@ -52,7 +50,6 @@
   box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.3);
 }
 
-/* Grid-systemet */
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -60,7 +57,7 @@
   width: 100%;
 }
 
-/* Kortene */
+
 .experience-card {
   background: #ffffff;
   border-radius: 20px;
@@ -115,7 +112,6 @@
   align-self: flex-start;
 }
 
-/* Responsivitet */
 @media (max-width: 768px) {
   .experience-section {
     padding: 0 1.5rem 40px 1.5rem;

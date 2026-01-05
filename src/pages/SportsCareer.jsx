@@ -1,7 +1,7 @@
 import { SportsCard } from "../components/SportsCard";
 import { useState } from "react";
 
-// Import av bilder
+
 import bryteImg1 from "../assets/sports/brytebilde.jpeg";
 import bryteImg2 from "../assets/sports/brytebilde2.JPG";
 import bryteImg3 from "../assets/sports/brytebilde3.PNG";
