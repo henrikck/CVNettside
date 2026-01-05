@@ -63,7 +63,7 @@ export function Experience() {
     },
     {
       title: "Referansegruppemedlem i Matematikk 3",
-      desc: "Bidro med faglige tilbakemeldinger.",
+      desc: "Bidro med faglige tilbakemeldinger i faget.",
       img: ntnuImg,
       year: "2025",
       type: "Volunteer"
