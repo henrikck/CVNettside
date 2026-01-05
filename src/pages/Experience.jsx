@@ -1,73 +1,82 @@
 import { ExperienceCard } from "../components/ExperienceCard";
 import { useState } from "react";
 
+import ntnuImg from "../assets/experience/ntnu.png";
+import askoImg from "../assets/experience/asko.png";
+import gsvImg from "../assets/experience/gsv.png";
+import bryteImg from "../assets/experience/bryte.png";
+import ntnuiImg from "../assets/experience/ntnui.png";
+import nrImg from "../assets/experience/nr.png";
+
+
 export function Experience() {
 
-    const experiences = [
-      {
-        title: "Læringsassistent",
-        desc: "TDT4109 – ITGK: Veiledning i Python-programmering og problemløsning.",
-        img: "/src/assets/experience/ntnu.png",
-        year: "2025",
-        type: "Work"
-      },
-      {
-        title: "Læringsassistent",
-        desc: "TTT4203 – ADE: Veiledning i krets teori, analoge komponenter og digital logikk.",
-        img: "/src/assets/experience/ntnu.png",
-        year: "2025",
-        type: "Work"
-      },
-      {
-        title: "Læringsassistent",
-        desc: "Teknostart: Veileder for nye studenter.",
-        img: "/src/assets/experience/ntnu.png",
-        year: "2025",
-        type: "Work"
-      },
-      {
-        title: "Lagerarbeider",
-        desc: "Varehåndtering og logistikk med automatiserte systemer. Erfaring med treskiftarbeid i frysemiljø (–24 °C)",
-        img: "/src/assets/experience/asko.png",
-        year: "2025",
-        type: "Work"
-      },
-      {
-        title: "Grensejeger",
-        desc: "Førstegangstjeneste som patruljefører i Jarfjordkompaniet, Garnisonen i Sør-Varanger. Avsluttet med vurderingen «Over norm».",
-        img: "/src/assets/experience/gsv.png",
-        year: "2023",
-        type: "Work"
-      },
-      {
-        title: "Hovedtrener for brytelek/skole",
-        desc: "Ansvar for brytepartier (4–9 år) med fokus på mestring og trygghet.",
-        img: "/src/assets/experience/bryte.png",
-        year: "2022",
-        type: "Work"
-      },
-      {
-        title: "Medlem av Sponsorkomiteen NTNUI roing",
-        desc: "Bidro til å bygge og opprettholde sponsorpartnerskap.",
-        img: "/src/assets/experience/ntnui.png",
-        year: "2025",
-        type: "Volunteer"
-      },
-      {
-        title: "Referansegruppemedlem i Matematikk 3",
-        desc: "Bidro med tilbakemeldinger til emneansvarlige for faglig utvikling.",
-        img: "/src/assets/experience/ntnu.png",
-        year: "2025",
-        type: "Volunteer"
-      },
-      {
-        title: "Referansegruppemedlem, Matematikk 3",
-        desc: "Bidro med tilbakemeldinger til emneansvarlige for faglig utvikling.",
-        img: "/src/assets/experience/nr.png",
-        year: "2025",
-        type: "Volunteer"
-      }
-    ];
+  const experiences = [
+    {
+      title: "Læringsassistent",
+      desc: "TDT4109 – ITGK: Veiledning i Python-programmering og problemløsning.",
+      img: ntnuImg,
+      year: "2025",
+      type: "Work"
+    },
+    {
+      title: "Læringsassistent",
+      desc: "TTT4203 – ADE: Veiledning i krets teori, analoge komponenter og digital logikk.",
+      img: ntnuImg,
+      year: "2025",
+      type: "Work"
+    },
+    {
+      title: "Læringsassistent",
+      desc: "Teknostart: Veileder for nye studenter.",
+      img: ntnuImg,
+      year: "2025",
+      type: "Work"
+    },
+    {
+      title: "Lagerarbeider",
+      desc: "Varehåndtering og logistikk med automatiserte systemer.",
+      img: askoImg,
+      year: "2025",
+      type: "Work"
+    },
+    {
+      title: "Grensejeger",
+      desc: "Førstegangstjeneste som patruljefører i Jarfjordkompaniet.",
+      img: gsvImg,
+      year: "2023",
+      type: "Work"
+    },
+    {
+      title: "Hovedtrener for brytelek/skole",
+      desc: "Ansvar for brytepartier (4–9 år).",
+      img: bryteImg,
+      year: "2022",
+      type: "Work"
+    },
+    {
+      title: "Medlem av Sponsorkomiteen NTNUI roing",
+      desc: "Bidro til å bygge sponsorpartnerskap.",
+      img: ntnuiImg,
+      year: "2025",
+      type: "Volunteer"
+    },
+    {
+      title: "Referansegruppemedlem i Matematikk 3",
+      desc: "Bidro med faglige tilbakemeldinger.",
+      img: ntnuImg,
+      year: "2025",
+      type: "Volunteer"
+    },
+    {
+      title: "Referansegruppemedlem, Matematikk 3",
+      desc: "Bidro med faglige tilbakemeldinger.",
+      img: nrImg,
+      year: "2025",
+      type: "Volunteer"
+    }
+  ];
+
 
     const [filter, setFilter] = useState("All");
     const [sortOrder, setSortOrder] = useState("newest");
