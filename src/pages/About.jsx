@@ -4,10 +4,15 @@ import snm2025 from "../assets/sports/SNM2025.jpg";
 export function About() {
   return (
     <div className="about-container">
-      {}
+      
       <section className="about-hero-section">
         <div className="about-image-wrapper">
-          <img src={snm2025} alt="Henrik Christoffer Kran" className="about-img" />
+          <img 
+            src={snm2025} 
+            alt="Henrik Christoffer Kran" 
+            className="about-img" 
+            loading="lazy" 
+          />
         </div>
         
         <div className="about-intro-text">
@@ -22,9 +27,7 @@ export function About() {
         </div>
       </section>
 
-      {}
       <div className="about-content-grid">
-        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-medal"></i></div>
           <h3>Erfaring & Disiplin</h3>
@@ -35,7 +38,6 @@ export function About() {
           </p>
         </div>
 
-        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-code"></i></div>
           <h3>Programmering & Utvikling</h3>
@@ -46,7 +48,6 @@ export function About() {
           </p>
         </div>
 
-        
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-chalkboard-user"></i></div>
           <h3>Formidling & Veiledning</h3>

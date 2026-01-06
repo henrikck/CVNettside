@@ -1,7 +1,6 @@
 import CVImg from "../assets/Home.jpg";
 import "./Home.css";
 
-
 import ntnuImg from "../assets/ntnuS.png"; 
 import askoImg from "../assets/askoS.png"; 
 import gsvImg from "../assets/gsvS.png"; 
@@ -13,8 +12,7 @@ export function Home() {
       <section className="hero">
         <div className="hero-text">
           <h1 className="hero-title">
-            Masterstudent, <br />
-            patruljefører og landslagsutøver.
+            Masterstudent, patruljefører og landslagsutøver.
           </h1>
 
           <p className="hero-description">
@@ -33,7 +31,12 @@ export function Home() {
         </div>
 
         <div className="profile-wrapper">
-          <img src={CVImg} alt="Henrik Christoffer Kran" className="hero-img" />
+          <img 
+            src={CVImg} 
+            alt="Henrik Christoffer Kran" 
+            className="hero-img" 
+            loading="lazy" 
+          />
         </div>
       </section>
 
@@ -44,30 +47,27 @@ export function Home() {
         </div>
         
         <div className="logo-grid">
-            <div className="company-logo">
-                <a href="https://www.ntnu.no" target="_blank" rel="noreferrer">
-                <img src={ntnuImg} alt="NTNU" />
-                </a>
-            </div>
-            
-            <div className="company-logo">
-                <a href="https://www.forsvaret.no/om-forsvaret/tjenestesteder/hoybuktmoen-gsv" target="_blank" rel="noreferrer">
-                <img src={gsvImg} alt="GSV" />
-                </a>
-            </div>
-            
-            <div className="company-logo">
-                <a href="https://ntnui.no/roing/" target="_blank" rel="noreferrer">
-                <img src={ntnuiImg} alt="NTNUI" />
-                </a>
-            </div>
-            
-            <div className="company-logo">
-                <a href="https://asko.no/kontakt-oss/vare-asko-selskap/asko-oslofjord-as/" target="_blank" rel="noreferrer">
-                <img src={askoImg} alt="ASKO" />
-                </a>
-            </div>
-            </div>
+          <div className="company-logo">
+            <a href="https://www.ntnu.no" target="_blank" rel="noreferrer">
+              <img src={ntnuImg} alt="NTNU" loading="lazy" />
+            </a>
+          </div>
+          <div className="company-logo">
+            <a href="https://www.forsvaret.no/..." target="_blank" rel="noreferrer">
+              <img src={gsvImg} alt="GSV" loading="lazy" />
+            </a>
+          </div>
+          <div className="company-logo">
+            <a href="https://ntnui.no/roing/" target="_blank" rel="noreferrer">
+              <img src={ntnuiImg} alt="NTNUI" loading="lazy" />
+            </a>
+          </div>
+          <div className="company-logo">
+            <a href="https://asko.no/..." target="_blank" rel="noreferrer">
+              <img src={askoImg} alt="ASKO" loading="lazy" />
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
