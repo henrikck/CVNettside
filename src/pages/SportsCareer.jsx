@@ -24,9 +24,11 @@ import snm2025Innen from "../assets/sports/SNM2025innen.PNG";
 import snm2025Lag from "../assets/sports/SNM2025lagbilde.PNG";
 import sumoEm from "../assets/sports/SumoEM2024.jpeg";
 import sumoNm from "../assets/sports/SumoNM2024.jpeg";
+import Vasa from "../assets/sports/Vasa.jpg";
 
 export function SportsCareer() {
   const sports = [
+    { title: "Vasaloppet", desc: "Livets første skirenn ble verdens største på 90 km. Begynte helt bakerst, så gikk forbi rundt 8000 stk.", img: Vasa, year: "2026", type: "Sandbryting", big: "no" },
     { title: "Norgesmester i sandbryting", desc: "1. plass i 90-kilosklassen som senior.", img: nm2025Sand, year: "2025", type: "Sandbryting", big: "yes" },
     { title: "10. plass i ro-NM", desc: "I klassen 8+ (8 stk ror med 1 åre). Deltok også i klassen 2x (2 stk ror med 2 årer).", img: snm2025Lag, year: "2025", type: "Roing", big: "no" },
     { title: "7. plass i Student-NM", desc: "I klassen 8+ (8 stk ror med 1 åre). Dette var også min første regatta.", img: snm2025, year: "2025", type: "Roing", big: "no" },

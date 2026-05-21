@@ -7,10 +7,26 @@ import gsvImg from "../assets/experience/gsv.png";
 import bryteImg from "../assets/experience/bryte.png";
 import ntnuiImg from "../assets/experience/ntnui.png";
 import nrImg from "../assets/experience/nr.png";
+import reluImg from "../assets/experience/ReLU_navy_blue.png";
+import konnektImg from "../assets/experience/KonnektL.png";
 
 export function Experience() {
 
   const experiences = [
+    {
+      title: "Nestleder ReLU NTNU",
+      desc: "Bidrar til både strategisk og operativt arbeid i organisasjonen. Koordinerer styrearbeid og intern oppfølging, samarbeider med eksterne partnere og deltar i initiativer og aktiviteter innen kunstig intelligens og maskinlæring.",
+      img: reluImg,
+      year: "2026",
+      type: "Verv"
+    },
+    {
+      title: "Teknisk verv/ Summer Intern, Konnekt ",
+      desc: "Bidrar i NTNUs mest avanserte modelljernbaneprosjekter. Arbeider med computer vision og anvendt AI/maskinlæring i skjæringspunktet mellom praktisk ingeniørarbeid og jernbaneteknologi. ",
+      img: konnektImg,
+      year: "2026",
+      type: "Jobb"
+    },
     {
       title: "Prosjektgruppe Student-VM",
       desc: "Meldem av prosjektgruppe som har ansvar for uttaket til Student-VM i Roing i Canada. ",

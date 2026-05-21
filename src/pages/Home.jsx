@@ -5,6 +5,7 @@ import ntnuImg from "../assets/ntnuS.png";
 import askoImg from "../assets/askoS.png"; 
 import gsvImg from "../assets/gsvS.png"; 
 import ntnuiImg from "../assets/ntnuiS.png";
+import reluImg from "../assets/ReLUS.png";
 
 export function Home() {
   return (
@@ -63,8 +64,8 @@ export function Home() {
             </a>
           </div>
           <div className="company-logo">
-            <a href="https://asko.no/..." target="_blank" rel="noreferrer">
-              <img src={askoImg} alt="ASKO" loading="lazy" />
+            <a href="https://reluntnu.no/" target="_blank" rel="noreferrer">
+              <img src={reluImg} alt="ReLU" loading="lazy" />
             </a>
           </div>
         </div>
