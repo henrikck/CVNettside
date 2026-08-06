@@ -1,5 +1,6 @@
-import { NavLink, useLocation } from "react-router-dom"; 
+import { NavLink, useLocation } from "react-router-dom";
 import homeLogo from "../assets/Home.jpg";
+import { ThemeToggle } from "./ThemeToggle";
 import "./Navbar.css";
 
 export function Navbar() {
@@ -24,6 +25,10 @@ export function Navbar() {
         <NavLink to="/Experience" className="nav-item">Erfaring</NavLink>
         <NavLink to="/SportsCareer" className="nav-item">Idrett</NavLink>
         <NavLink to="/Contact" className="nav-item">Kontakt</NavLink>
+      </div>
+
+      <div className="theme-container">
+        <ThemeToggle />
       </div>
     </nav>
   );

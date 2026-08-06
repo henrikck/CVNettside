@@ -18,7 +18,7 @@
 .sports-section h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1e293b;
+  color: var(--text-strong);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -63,11 +63,11 @@
 
 
 .sports-card {
-  background: #ffffff;
+  background: var(--surface);
   border-radius: 24px;
-  padding: 1.5rem; 
+  padding: 1.5rem;
   text-align: center;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid var(--card-border);
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
@@ -78,8 +78,8 @@
 
 .sports-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border-color: #14b8a6;
+  box-shadow: 0 20px 25px -5px var(--shadow-color);
+  border-color: var(--accent-color);
 }
 
 
@@ -89,22 +89,22 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.5rem;
-  border: 5px solid #f0fdfa;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 5px solid var(--accent-soft-bg);
+  box-shadow: 0 4px 10px var(--shadow-color);
   transition: transform 0.4s ease;
 }
 
 
 .sports-card h2 {
   font-size: 1.5rem;
-  color: #1e293b;
+  color: var(--text-strong);
   margin-bottom: 0.4rem;
   font-weight: 800;
 }
 
 .sports-card .year {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: var(--text-faint);
   font-weight: 600;
   margin-bottom: 1rem;
   display: block;
@@ -113,6 +113,6 @@
 .sports-card .desc {
   font-size: 1rem;
   line-height: 1.6;
-  color: #475569;
+  color: var(--text-muted);
   margin: 0;
 }

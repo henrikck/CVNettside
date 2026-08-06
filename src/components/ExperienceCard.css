@@ -1,5 +1,5 @@
 .experience-section {
-  background-color: #ffffff; 
+  background-color: var(--surface);
   padding: 0 2rem 80px 2rem; 
   min-height: 100vh; 
   display: flex;
@@ -18,7 +18,7 @@
 .experience-section h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1e293b;
+  color: var(--text-strong);
   margin-bottom: 2rem;
   text-align: left; 
 }
@@ -34,19 +34,19 @@
 .filters button {
   padding: 10px 24px;
   border: none;
-  background: #ffffff;
-  color: #64748b;
+  background: var(--surface);
+  color: var(--text-soft);
   cursor: pointer;
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.95rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px var(--shadow-color);
   transition: all 0.3s ease;
 }
 
 .filters .active {
-  background: #14b8a6;
-  color: white;
+  background: var(--accent-color);
+  color: #0b1120;
   box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.3);
 }
 
@@ -59,7 +59,7 @@
 
 
 .experience-card {
-  background: #ffffff;
+  background: var(--surface);
   border-radius: 20px;
   padding: 2rem;
   display: flex;
@@ -67,13 +67,13 @@
   height: 100%;
   box-sizing: border-box;
   transition: all 0.4s ease;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid var(--card-border);
 }
 
 .experience-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border-color: #14b8a6;
+  box-shadow: 0 20px 25px -5px var(--shadow-color);
+  border-color: var(--accent-color);
 }
 
 .experience-card img {
@@ -86,18 +86,18 @@
 .experience-card h2 {
   margin: 0 0 0.1rem 0;
   font-size: 1.4rem;
-  color: #1e293b;
+  color: var(--text-strong);
 }
 
 .experience-card .year {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: var(--text-faint);
   margin-bottom: 0.1rem;
 }
 
 .experience-card p {
   font-size: 1rem;
-  color: #475569;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
@@ -105,8 +105,8 @@
   margin-top: auto;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #14b8a6;
-  background: #f0fdfa;
+  color: var(--accent-color);
+  background: var(--accent-soft-bg);
   padding: 4px 12px;
   border-radius: 6px;
   align-self: flex-start;

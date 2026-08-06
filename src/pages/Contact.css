@@ -8,12 +8,12 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 20px;
-  color: #1a1c2c;
+  color: var(--text-strong);
 }
 
 .intro-text {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 60px;
 }
@@ -39,14 +39,14 @@ h1 {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #63b38e; 
+  color: var(--accent-color);
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 .link {
   font-size: 1.2rem;
-  color: #1a1c2c;
+  color: var(--text-strong);
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.2s;
