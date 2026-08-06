@@ -1,5 +1,5 @@
 import "./About.css";
-import snm2025 from "../assets/sports/SNM2025.jpg"; 
+import snm2025 from "../assets/sports/SNM2025.webp"; 
 
 export function About() {
   return (
@@ -7,11 +7,15 @@ export function About() {
       
       <section className="about-hero-section">
         <div className="about-image-wrapper">
-          <img 
-            src={snm2025} 
-            alt="Henrik Christoffer Kran" 
-            className="about-img" 
-            loading="lazy" 
+          <img
+            src={snm2025}
+            alt="Henrik Christoffer Kran"
+            className="about-img"
+            width={350}
+            height={450}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
         

@@ -2,29 +2,29 @@ import { SportsCard } from "../components/SportsCard";
 import { useState } from "react";
 
 
-import bryteImg1 from "../assets/sports/brytebilde.jpeg";
-import bryteImg2 from "../assets/sports/brytebilde2.JPG";
-import bryteImg3 from "../assets/sports/brytebilde3.PNG";
-import kolbotnImg from "../assets/sports/Kolbotn2019.JPG";
-import lagkampImg from "../assets/sports/Lagkamp2020.JPG";
-import malarImg from "../assets/sports/Malar2021.JPG";
-import nm2015 from "../assets/sports/NM2015.JPG";
-import nm2016 from "../assets/sports/NM2016.JPG";
-import nm2018 from "../assets/sports/NM2018.JPG";
-import nm2021Senior from "../assets/sports/NM2021Senior.JPEG";
-import nm2021Ungdom from "../assets/sports/NM2021ungdom.JPG";
-import nm2022Junior from "../assets/sports/NM2022Junior.jpeg";
-import nm2023Junior from "../assets/sports/NM2023Junior.jpeg";
-import nm2023Senior from "../assets/sports/NM2023senior.PNG";
-import nm2025Sand from "../assets/sports/NM2025sand.jpeg";
-import nmRoing from "../assets/sports/NMroing2025.jpeg";
-import rosneyImg from "../assets/sports/Rosney2023.JPG";
-import snm2025 from "../assets/sports/SNM2025.jpg";
-import snm2025Innen from "../assets/sports/SNM2025innen.PNG";
-import snm2025Lag from "../assets/sports/SNM2025lagbilde.PNG";
-import sumoEm from "../assets/sports/SumoEM2024.jpeg";
-import sumoNm from "../assets/sports/SumoNM2024.jpeg";
-import Vasa from "../assets/sports/Vasa.jpg";
+import bryteImg1 from "../assets/sports/brytebilde.webp";
+import bryteImg2 from "../assets/sports/brytebilde2.webp";
+import bryteImg3 from "../assets/sports/brytebilde3.webp";
+import kolbotnImg from "../assets/sports/Kolbotn2019.webp";
+import lagkampImg from "../assets/sports/Lagkamp2020.webp";
+import malarImg from "../assets/sports/Malar2021.webp";
+import nm2015 from "../assets/sports/NM2015.webp";
+import nm2016 from "../assets/sports/NM2016.webp";
+import nm2018 from "../assets/sports/NM2018.webp";
+import nm2021Senior from "../assets/sports/NM2021Senior.webp";
+import nm2021Ungdom from "../assets/sports/NM2021ungdom.webp";
+import nm2022Junior from "../assets/sports/NM2022Junior.webp";
+import nm2023Junior from "../assets/sports/NM2023Junior.webp";
+import nm2023Senior from "../assets/sports/NM2023senior.webp";
+import nm2025Sand from "../assets/sports/NM2025sand.webp";
+import nmRoing from "../assets/sports/NMroing2025.webp";
+import rosneyImg from "../assets/sports/Rosney2023.webp";
+import snm2025 from "../assets/sports/SNM2025.webp";
+import snm2025Innen from "../assets/sports/SNM2025innen.webp";
+import snm2025Lag from "../assets/sports/SNM2025lagbilde.webp";
+import sumoEm from "../assets/sports/SumoEM2024.webp";
+import sumoNm from "../assets/sports/SumoNM2024.webp";
+import Vasa from "../assets/sports/Vasa.webp";
 
 export function SportsCareer() {
   const sports = [

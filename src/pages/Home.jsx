@@ -1,11 +1,11 @@
-import CVImg from "../assets/Home.jpg";
+import CVImg from "../assets/Home.webp";
 import "./Home.css";
 
-import ntnuImg from "../assets/ntnuS.png"; 
-import askoImg from "../assets/askoS.png"; 
-import gsvImg from "../assets/gsvS.png"; 
-import ntnuiImg from "../assets/ntnuiS.png";
-import reluImg from "../assets/ReLUS.png";
+import ntnuImg from "../assets/ntnuS.webp"; 
+import askoImg from "../assets/askoS.webp"; 
+import gsvImg from "../assets/gsvS.webp"; 
+import ntnuiImg from "../assets/ntnuiS.webp";
+import reluImg from "../assets/ReLUS.webp";
 
 export function Home() {
   return (
@@ -32,11 +32,15 @@ export function Home() {
         </div>
 
         <div className="profile-wrapper">
-          <img 
-            src={CVImg} 
-            alt="Henrik Christoffer Kran" 
-            className="hero-img" 
-            loading="lazy" 
+          <img
+            src={CVImg}
+            alt="Henrik Christoffer Kran"
+            className="hero-img"
+            width={400}
+            height={400}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
       </section>
@@ -50,22 +54,22 @@ export function Home() {
         <div className="logo-grid">
           <div className="company-logo">
             <a href="https://www.ntnu.no" target="_blank" rel="noreferrer">
-              <img src={ntnuImg} alt="NTNU" loading="lazy" />
+              <img src={ntnuImg} alt="NTNU" loading="lazy" decoding="async" />
             </a>
           </div>
           <div className="company-logo">
             <a href="https://www.forsvaret.no/..." target="_blank" rel="noreferrer">
-              <img src={gsvImg} alt="GSV" loading="lazy" />
+              <img src={gsvImg} alt="GSV" loading="lazy" decoding="async" />
             </a>
           </div>
           <div className="company-logo">
             <a href="https://ntnui.no/roing/" target="_blank" rel="noreferrer">
-              <img src={ntnuiImg} alt="NTNUI" loading="lazy" />
+              <img src={ntnuiImg} alt="NTNUI" loading="lazy" decoding="async" />
             </a>
           </div>
           <div className="company-logo">
             <a href="https://reluntnu.no/" target="_blank" rel="noreferrer">
-              <img src={reluImg} alt="ReLU" loading="lazy" />
+              <img src={reluImg} alt="ReLU" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>

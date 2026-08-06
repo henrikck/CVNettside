@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import homeLogo from "../assets/Home.jpg";
+import homeLogo from "../assets/Home.webp";
 import { ThemeToggle } from "./ThemeToggle";
 import "./Navbar.css";
 
@@ -15,7 +15,14 @@ export function Navbar() {
       <div className="logo-container">
         {!isHomePage && (
           <NavLink to="/">
-            <img src={homeLogo} alt="Hjem" className="nav-logo-img" />
+            <img
+              src={homeLogo}
+              alt="Hjem"
+              className="nav-logo-img"
+              width={48}
+              height={48}
+              decoding="async"
+            />
           </NavLink>
         )}
       </div>

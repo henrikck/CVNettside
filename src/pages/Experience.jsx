@@ -1,14 +1,14 @@
 import { ExperienceCard } from "../components/ExperienceCard";
 import { useState } from "react";
 
-import ntnuImg from "../assets/experience/ntnu.png";
-import askoImg from "../assets/experience/asko.png";
-import gsvImg from "../assets/experience/gsv.png";
-import bryteImg from "../assets/experience/bryte.png";
-import ntnuiImg from "../assets/experience/ntnui.png";
-import nrImg from "../assets/experience/nr.png";
-import reluImg from "../assets/experience/ReLU_navy_blue.png";
-import konnektImg from "../assets/experience/KonnektL.png";
+import ntnuImg from "../assets/experience/ntnu.webp";
+import askoImg from "../assets/experience/asko.webp";
+import gsvImg from "../assets/experience/gsv.webp";
+import bryteImg from "../assets/experience/bryte.webp";
+import ntnuiImg from "../assets/experience/ntnui.webp";
+import nrImg from "../assets/experience/nr.webp";
+import reluImg from "../assets/experience/ReLU_navy_blue.webp";
+import konnektImg from "../assets/experience/KonnektL.webp";
 
 export function Experience() {
 

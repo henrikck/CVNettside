@@ -1,5 +1,5 @@
-import darkModeIcon from "../assets/dark-mode.png";
-import lightModeIcon from "../assets/light-mode.png";
+import darkModeIcon from "../assets/dark-mode.webp";
+import lightModeIcon from "../assets/light-mode.webp";
 import { useTheme } from "./ThemeContext";
 import "./ThemeToggle.css";
 
@@ -19,6 +19,9 @@ export function ThemeToggle() {
         src={isDark ? lightModeIcon : darkModeIcon}
         alt=""
         className="theme-toggle-img"
+        width={24}
+        height={24}
+        decoding="async"
       />
     </button>
   );
