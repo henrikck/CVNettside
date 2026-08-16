@@ -17,8 +17,7 @@ export function Home() {
           </h1>
 
           <p className="hero-description">
-            Jeg heter Henrik Christoffer Kran, er masterstudent i datateknologi ved NTNU, 
-            med bakgrunn som patruljefører i GSV og landslagsutøver i bryting.
+            Jeg heter Henrik Christoffer Kran, sivilingeniørstudent i datateknologi ved NTNU med spesialisering i kunstig intelligens, og med bakgrunn som patruljefører i GSV og landslagsutøver i bryting.
           </p>
 
           <div className="hero-socials">
@@ -53,6 +52,11 @@ export function Home() {
         
         <div className="logo-grid">
           <div className="company-logo">
+            <a href="https://reluntnu.no/" target="_blank" rel="noreferrer">
+              <img src={reluImg} alt="ReLU" loading="lazy" decoding="async" />
+            </a>
+          </div>
+          <div className="company-logo">
             <a href="https://www.ntnu.no" target="_blank" rel="noreferrer">
               <img src={ntnuImg} alt="NTNU" loading="lazy" decoding="async" />
             </a>
@@ -65,11 +69,6 @@ export function Home() {
           <div className="company-logo">
             <a href="https://ntnui.no/roing/" target="_blank" rel="noreferrer">
               <img src={ntnuiImg} alt="NTNUI" loading="lazy" decoding="async" />
-            </a>
-          </div>
-          <div className="company-logo">
-            <a href="https://reluntnu.no/" target="_blank" rel="noreferrer">
-              <img src={reluImg} alt="ReLU" loading="lazy" decoding="async" />
             </a>
           </div>
         </div>

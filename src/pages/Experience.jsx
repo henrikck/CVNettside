@@ -15,14 +15,14 @@ export function Experience() {
   const experiences = [
     {
       title: "Nestleder ReLU NTNU",
-      desc: "Bidrar til både strategisk og operativt arbeid i organisasjonen. Koordinerer styrearbeid og intern oppfølging, samarbeider med eksterne partnere og deltar i initiativer og aktiviteter innen kunstig intelligens og maskinlæring.",
+      desc: "ReLU er en studentdrevet organisasjon ved NTNU som bygger anvendte maskinlærings- og AI-løsninger for bedrifter og forskningsmiljøer. Som nestleder er jeg involver t i hele driften, fra strategi og styrearbeid til partnerrelasjoner og faglig utvikling. ",
       img: reluImg,
       year: "2026",
       type: "Verv"
     },
     {
       title: "Teknisk verv/ Summer Intern, Konnekt ",
-      desc: "Bidrar i NTNUs mest avanserte modelljernbaneprosjekter. Arbeider med computer vision og anvendt AI/maskinlæring i skjæringspunktet mellom praktisk ingeniørarbeid og jernbaneteknologi. ",
+      desc: "Utviklet maskinlæringsløsninger for «Verdens mest avanserte modelljernbane». Bygget et computer vision-system for å gjenkjenne objekter på banen og et autonomt styringssystem basert på sanntids socket-programmering. ",
       img: konnektImg,
       year: "2026",
       type: "Jobb"

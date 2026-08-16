@@ -22,7 +22,8 @@ export function About() {
         <div className="about-intro-text">
           <h1 className="about-title">Om meg</h1>
           <p className="about-lead">
-            Jeg heter Henrik Christoffer Kran og er masterstudent i datateknologi ved NTNU.
+            Jeg heter Henrik Christoffer Kran og er sivilingeniørstudent i datateknologi 
+            ved NTNU med spesialisering i kunstig intelligens.
           </p>
           <p className="about-description-text">
             Jeg trives i miljøer med høye krav, både faglig og personlig, og motiveres 
@@ -32,13 +33,28 @@ export function About() {
       </section>
 
       <div className="about-content-grid">
+
+        <div className="about-card">
+          <div className="about-icon"><i className="fa-solid fa-brain"></i></div>
+          <h3>Maskinlæring & AI</h3>
+          <p>
+            Spesialiseringen min er kunstig intelligens. Som nestleder i <strong>ReLU NTNU</strong>, 
+            en studentdrevet organisasjon som bygger anvendte ML-løsninger for eksterne partnere.
+            Hos <strong>Konnekt</strong> bygde jeg et computer vision-system for 
+            objektgjenkjenning med <strong>YOLO og PyTorch</strong>, koblet til et autonomt 
+            styringssystem basert på sanntids socket-programmering.
+          </p>
+        </div>
+
         <div className="about-card">
           <div className="about-icon"><i className="fa-solid fa-medal"></i></div>
           <h3>Erfaring & Disiplin</h3>
           <p>
-            Jeg har bakgrunn som patruljefører i Garnisonen i Sør-Varanger (GSV) og som 
-            landslagsutøver i bryting. Disse erfaringene har gitt meg høy arbeidskapasitet, 
-            struktur og evne til å ta ansvar i krevende situasjoner.
+            Jeg har bakgrunn som patruljefører i Garnisonen i Sør-Varanger (GSV), der jeg 
+            ledet en patrulje under krevende forhold og avsluttet med vurderingen «Over norm». 
+            Som landslagsutøver i bryting har jeg konkurrert internasjonalt på høyt nivå over flere år. 
+            Til sammen har disse erfaringene gitt meg høy arbeidskapasitet, disiplin og struktur, 
+            og evnen til å holde hodet kaldt og ta ansvar når situasjonen krever det.
           </p>
         </div>
 
@@ -46,21 +62,15 @@ export function About() {
           <div className="about-icon"><i className="fa-solid fa-code"></i></div>
           <h3>Programmering & Utvikling</h3>
           <p>
-            Faglig har jeg en sterk interesse for programmering og systemutvikling. 
-            Jeg har erfaring med <strong>Python, Java og React</strong>, og denne nettsiden 
-            er utviklet av meg ved bruk av React, HTML, CSS og JavaScript med Git for versjonskontroll.
+            Faglig har jeg en sterk interesse for programmering og systemutvikling, fra 
+            backend og API-er til brukervennlige grensesnitt. Jeg jobber til daglig i 
+            <strong> Python og Java</strong>, har erfaring med <strong>SQL og databaser</strong>, 
+            og har bygget REST-API-er i rammeverk som <strong>Django og Spring Boot</strong>. 
+            På frontend-siden bruker jeg <strong>React, HTML, CSS og JavaScript</strong>, denne 
+            nettsiden er utviklet av meg fra bunnen av, med Git for versjonskontroll.
           </p>
         </div>
 
-        <div className="about-card">
-          <div className="about-icon"><i className="fa-solid fa-chalkboard-user"></i></div>
-          <h3>Formidling & Veiledning</h3>
-          <p>
-            Som læringsassistent ved NTNU har jeg veiledet studenter i Python, kretsteori 
-            og digital logikk. Dette har styrket min evne til å formidle komplekse 
-            konsepter på en tydelig og forståelig måte.
-          </p>
-        </div>
       </div>
     </div>
   );
