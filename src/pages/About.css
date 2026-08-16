@@ -1,7 +1,7 @@
 .about-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 40px;
+  padding: 100px 0;
   line-height: 1.6;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   gap: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .about-image-wrapper {
@@ -53,16 +53,24 @@
 
 .about-content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Det tredje kortet har mest tekst og fyller hele bredden på siste rad */
+.about-card:last-child {
+  grid-column: 1 / -1;
 }
 
 .about-card {
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
-  padding: 40px;
+  padding: 36px 40px;
   border-radius: 20px;
   border: 1px solid var(--card-border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .about-card:hover {
@@ -71,21 +79,18 @@
   border-color: var(--accent-color);
 }
 
-.about-icon {
-  font-size: 2.5rem;
-  color: var(--accent-color);
-  margin-bottom: 25px;
-}
-
 .about-card h3 {
-  font-size: 1.35rem;
-  margin-bottom: 15px;
+  font-size: 1.3rem;
+  margin: 0 0 16px 0;
   color: var(--text-strong);
+  letter-spacing: -0.01em;
 }
 
 .about-card p {
   font-size: 1.05rem;
   color: var(--text-muted);
+  margin: 0;
+  text-wrap: pretty;
 }
 
 
@@ -99,20 +104,24 @@
   .about-img {
     width: 250px;
     height: 250px;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 
   .about-title {
     font-size: 3rem;
   }
+
+  .about-content-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
   .about-container {
-    padding: 60px 20px;
+    padding: 60px 0;
   }
-  
+
   .about-card {
-    padding: 30px;
+    padding: 28px 24px;
   }
-} 
+}
