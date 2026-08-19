@@ -35,8 +35,8 @@ export function Experience() {
       type: "Verv"
     },
     {
-      title: "Medlem av Sponsorkomiteen NTNUI roing",
-      desc: "Bidro til å bygge og opprettholde sponsorpartnerskap, der jeg hadde hovedavsar for hovedsponsoren Syncrolift.",
+      title: "Nestleder av Sponsorkomiteen NTNUI roing",
+      desc: "Bygget og opprettholdt sponsorpartnerskap, med hovedansvar for hovedsponsoren Syncrolift og arrangementet Sweco-Sirkelen.",
       img: ntnuiImg,
       year: "2025",
       type: "Verv"
