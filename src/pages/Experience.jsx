@@ -15,7 +15,7 @@ export function Experience() {
   const experiences = [
     {
       title: "Nestleder ReLU NTNU",
-      desc: "ReLU er en studentdrevet organisasjon ved NTNU som bygger anvendte maskinlærings- og AI-løsninger for bedrifter og forskningsmiljøer. Som nestleder er jeg involver t i hele driften, fra strategi og styrearbeid til partnerrelasjoner og faglig utvikling. ",
+      desc: "ReLU er en studentdrevet organisasjon ved NTNU som bygger anvendte maskinlærings- og AI-løsninger for bedrifter og forskningsmiljøer. Som nestleder er jeg involvert i hele driften, fra strategi og styrearbeid til partnerrelasjoner og faglig utvikling. ",
       img: reluImg,
       year: "2026",
       type: "Verv"
@@ -29,7 +29,7 @@ export function Experience() {
     },
     {
       title: "Prosjektgruppe Student-VM",
-      desc: "Meldem av prosjektgruppe som har ansvar for uttaket til Student-VM i Roing i Canada. ",
+      desc: "Medlem av prosjektgruppe som har ansvar for uttaket til Student-VM i roing i Canada. ",
       img: nrImg,
       year: "2026",
       type: "Verv"
@@ -63,7 +63,7 @@ export function Experience() {
       type: "Jobb"
     },
     {
-      title: "Medlem av Jubeleumskomiteen NTNUI roing",
+      title: "Medlem av Jubileumskomiteen NTNUI roing",
       desc: "Hadde hovedansvar for booking av lokaler.",
       img: ntnuiImg,
       year: "2025",
